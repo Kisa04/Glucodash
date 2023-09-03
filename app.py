@@ -8,7 +8,7 @@ def main():
     with st.container():
         st.title('Dynamic Ambulatory Glucose Profile (dAGP)')
         st.header('Input your Libre data and select your filters')
-        devices = ['Freestyle Libre', 'Dexcom', 'Nightscout']
+        devices = ['FreeStyle LibreLink', 'Dexcom', 'Nightscout']
         st.session_state.device = st.selectbox('Select your device', devices)
         st.session_state.data = st.file_uploader('Upload the glucose data downloaded from the LibreView website', type='csv')
         ranges = ['2 weeks', '1 month', '3 months', '6 months', '1 year', 'All times']
