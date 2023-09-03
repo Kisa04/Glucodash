@@ -20,7 +20,7 @@ class FinalData:
 
     def preprocessing(self):
 
-        device_dict = {'Freestyle Libre': [4, 2], 'Dexcom': [7, 1], 'Nightscout': [-2, 3]}
+        device_dict = {'Freestyle LibreLink': [4, 2], 'Dexcom': [7, 1], 'Nightscout': [-2, 3]}
         if self.device != 'Nightscout':
             try:
                 df = pd.read_csv(self.data, low_memory=False, delimiter=',', skiprows=1, on_bad_lines='skip')
